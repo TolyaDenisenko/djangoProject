@@ -7,6 +7,7 @@
 <table class="table mt-5 table-bordered table-striped table-hover">
     <thead class="table-dark">
     <tr>
+
         <th>Title</th>
         <th>Category</th>
         <th>Price</th>
@@ -17,7 +18,7 @@
     {% for course in courses %}
     <tr>
 
-        <td>{{ course.title }}</td>
+        <td> <a href={% url "single_course" course.id %}>{{ course.title }}</a> </td>
         <td>{{ course.category }}</td>
         <td>{{ course.price }}</td>
         <td>{{ course.students_qty }}</td>
