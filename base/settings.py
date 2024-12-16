@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'api.apps.ApiConfig',
     'tastypie'
+    'news.apps.NewsConfig'
 ]
 
 MIDDLEWARE = [
