@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.urls import path, include
 from api.models import CourseResource,CategoryResource
 from tastypie.api import Api
-from news.views import index
+from news.views import *
 
 api = Api(api_name='v1')
 
@@ -38,7 +38,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('shop/', include('shop.urls')),
     path('api/', include(api.urls)),
-    path('news/', include('news.urls'))
+    path('', include('news.urls')),
+
+
+
 
 
 
