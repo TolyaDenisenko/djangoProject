@@ -1,6 +1,7 @@
 {% load news_tags %}
 
             <div class="list-group">
+                <br>
                 {%get_list_categories as categories %}
                 {% for item in categories %}
                 <a href="{% url 'category' item.pk %}" class="list-group-item list-group-item-action" >
