@@ -60,7 +60,7 @@ class HomeNews(MyMixin,ListView):
    template_name = 'news/home_news_list.html'
    context_object_name = 'news'
    extra_context = {'title': 'Главная'}
-   mixin_prop = 'hello world'
+   mixin_prop = 'hello world Mixin Prop'
    paginate_by = 5 #параметр разбития на страницы
 
    def get_context_data(self, *, object_list=None, **kwargs):
